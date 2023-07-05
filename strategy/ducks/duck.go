@@ -2,11 +2,19 @@ package ducks
 
 import "fmt"
 
-type Duck struct {
-	FlyBehavior FlyBehavior
+//стратегия
+
+type FlyBehaviorInterface interface {
+	Fly()
 }
 
-func (d *Duck) SetFlyBehavior(fb FlyBehavior) {
+//контекст
+
+type Duck struct {
+	FlyBehavior FlyBehaviorInterface
+}
+
+func (d *Duck) SetFlyBehavior(fb FlyBehaviorInterface) {
 	d.FlyBehavior = fb
 }
 
@@ -14,9 +22,7 @@ func (d *Duck) PerformFly() {
 	d.FlyBehavior.Fly()
 }
 
-type FlyBehavior interface {
-	Fly()
-}
+//конкретные стратегии
 
 type FlyWithWings struct{}
 
