@@ -1,6 +1,8 @@
 package weatherApp
 
 import "fmt"///test
+
+//2
 func Run() {
 	fmt.Println("Running observer architecture...")
 
