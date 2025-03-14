@@ -4,8 +4,6 @@ package weatherApp
 //test ticket 2 444444
 
 
-//FIX
-
 type WeatherData struct {
 	temperature float64
 	humidity    float64
@@ -13,6 +11,8 @@ type WeatherData struct {
 	observers   []Observer
 }
 
+
+//eeeee
 //test ticket11
 
 func (w *WeatherData) RegisterObserver(o Observer) {
