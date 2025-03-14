@@ -11,7 +11,7 @@ type WeatherData struct {
 	observers   []Observer
 }
 
-//test ticket11
+//test ticket11_1
 
 func (w *WeatherData) RegisterObserver(o Observer) {
 	w.observers = append(w.observers, o)
