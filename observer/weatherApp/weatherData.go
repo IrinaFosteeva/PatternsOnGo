@@ -4,6 +4,8 @@ package weatherApp
 //test ticket 2 444444
 
 
+//FIX
+
 type WeatherData struct {
 	temperature float64
 	humidity    float64
