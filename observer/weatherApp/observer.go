@@ -1,7 +1,7 @@
 package weatherApp
 
 import "fmt"
-
+//23232
 type Observer interface {
 	Update(temperature, humidity, pressure float64)
 }
